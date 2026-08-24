@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  color: #333;
+  background-color: #f8f6f1;
+}
+
+/* ヘッダー */
+header {
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+
+/* メインビジュアル */
+.main-visual {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 80px;
+  background-color: #eee9df;
+}
+
+.main-text {
+  width: 420px;
+}
+
+.main-text p:first-child {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.main-text h2 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.6;
+  margin: 25px 0;
+}
+
+.main-text p {
+  line-height: 2;
+}
+
+.main-visual img {
+  width: 400px;
+  max-height: 450px;
+  object-fit: contain;
+}
+
+
+/* ボタン */
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 50px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+
+/* 共通セクション */
+section {
+  padding: 90px 80px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+
+
+/* 商品の魅力 */
+.feature {
+  background-color: #ffffff;
+}
+
+.feature img {
+  width: 650px;
+  max-width: 100%;
+}
+
+.feature p {
+  margin: 35px auto 0;
+  max-width: 600px;
+  line-height: 2;
+}
+
+
+/* 満足度 */
+.satisfaction {
+  background-color: #eee9df;
+}
+
+.satisfaction img {
+  width: 650px;
+  max-width: 100%;
+}
+
+
+/* 成分 */
+.ingredient {
+  background-color: #ffffff;
+}
+
+.ingredient img {
+  width: 700px;
+  max-width: 100%;
+}
+
+
+/* お申込み */
+.contact {
+  background-color: #eee9df;
+}
+
+.contact img {
+  width: 280px;
+  max-width: 100%;
+}
+
+
+/* フッター */
+footer {
+  padding: 60px 30px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+footer h2 {
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 13px;
+}
+
+footer p {
+  margin-top: 30px;
+  font-size: 12px;
+}
