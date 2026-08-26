@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style>.lw { font-size: 60px; font-family: Arial, Helvetica, sans-serif; }</style>
+            </head>
+            <body>
+                
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* 1列 */
+.one{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+/* 2列 */
+.two{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+/* 3列 */
+.three{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+/* 共通 */
+.box{
+  height:80px;
+  text-align:center;
+  line-height:80px;
+  background:#ffd9e6;
+}
+
+</style>
+
+
+
+
+<!-- 1行目 -->
+<div class="one">
+  <div class="box">1</div>
+</div>
+
+<!-- 2行目 -->
+<div class="two">
+  <div class="box">2</div>
+  <div class="box">3</div>
+</div>
+
+<!-- 3行目 -->
+<div class="three">
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+</div>
+
+<!-- 4行目 -->
+<div class="two">
+  <div class="box">7</div>
+  <div class="box">8</div>
+</div>
+
+<!-- 5行目 -->
+<div class="one">
+  <div class="box">9</div>
+</div>
+
+
+
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
