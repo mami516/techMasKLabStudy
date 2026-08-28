@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>円運動アニメーション</title>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<script>
+  // Canvasの要素を取得
+  var canvas = document.getElementById("canvas");
+
+  // Canvas要素から2D描画コンテキストを取得
+  var ctx = canvas.getContext("2d");
+
+  // 新しい画像オブジェクトを作成
+  var image = new Image();
+
+  // 画像のURLを指定
+  image.src = "https://techup.tokyo/wp-content/uploads/2022/05/gosticon.png";
+
+  // 画像がロードされた後に描画を開始する
+  image.onload = function() {
+
+    // Canvasの横の長さを指定
+    canvas.width = 500;
+
+    // Canvasの縦の長さを指定
+    canvas.height = 500;
+
+    // 横の座標を指定
+    var centerX = canvas.width / 2;
+
+    // 縦の座標を指定
+    var centerY = canvas.height / 2;
+
+    // 半径を定義
+    var radius = 150;
+
+    // 角度の定義
+    var angle = 0;
+
+    // アニメーションを開始する関数
+    function animate() {
+
+      // Canvasをクリア
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // 画像を円の周りに描画
+      var x = centerX + Math.cos(angle) * radius;
+      var y = centerY + Math.sin(angle) * radius;
+
+      ctx.drawImage(image, x - 25, y - 25, 50, 50);
+
+      // 画像を回転させるために角度を更新
+      angle += 0.05;
+
+      // アニメーションを続ける
+      requestAnimationFrame(animate);
+    }
+
+    // アニメーションを開始
+    animate();
+  };
+</script>
+
+</body>
+</html>
