@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>J-12</title>
+</head>
+<body>
+
+<script>
+  // 課題① コンストラクタWhoを定義
+  function Who(name) {
+    this.name = name;
+  }
+
+  // 課題② prototypeにインスタンスメソッドgetNameを設定
+  Who.prototype.getName = function() {
+    return this.name;
+  };
+
+  // 'tanaka'を渡してインスタンスを作成
+  const who = new Who('tanaka');
+
+  // コンソールに表示
+  console.log(who.getName());
+</script>
+
+</body>
+</html>
