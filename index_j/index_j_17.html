@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>円の弧を描く</title>
+</head>
+<body>
+
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+  <script>
+    'use strict';
+
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // 描画の操作を開始
+    ctx.beginPath();
+
+    // 円の情報を定義
+    ctx.arc(
+      250,
+      250,
+      100,
+      0,
+      270 * Math.PI / 180
+    );
+
+    // 定義したものを実行
+    ctx.stroke();
+  </script>
+
+</body>
+</html>
