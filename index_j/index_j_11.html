@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>デジタル時計</title>
+</head>
+<body>
+
+<script>
+  // デジタル時計の関数
+  function digitalClock() {
+    // 現在時間を取得
+    const now = new Date();
+
+    // 時間・分・秒を取得
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    let second = now.getSeconds();
+
+    // 1桁の場合は0をつけて2桁にする
+    if (hour < 10) {
+      hour = '0' + hour;
+    }
+
+    if (minute < 10) {
+      minute = '0' + minute;
+    }
+
+    if (second < 10) {
+      second = '0' + second;
+    }
+
+    // コンソールに表示
+    console.log(hour + ':' + minute + ':' + second);
+  }
+
+  // 1秒ごとに関数を実行
+  setInterval(digitalClock, 1000);
+</script>
+
+</body>
+</html>
