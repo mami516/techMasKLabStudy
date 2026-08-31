@@ -1,0 +1,46 @@
+/* ページ全体のデザイン */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* タイマーを囲むボックス */
+.timer-container {
+    text-align: center;
+    padding: 50px 70px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* タイトル */
+h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* 「来年まであと」の文字 */
+p {
+    font-size: 20px;
+}
+
+/* タイマーの数字 */
+#timer {
+    margin: 20px 0;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* 下のメッセージ */
+.message {
+    margin-top: 30px;
+    font-size: 18px;
+}
