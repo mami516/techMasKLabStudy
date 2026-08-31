@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>J-15</title>
+</head>
+<body>
+
+  <form>
+    <input type="text" id="number" value="0">
+    <button type="button" onclick="addOne()">+1</button>
+  </form>
+
+  <script>
+    function addOne() {
+      const number = document.getElementById('number');
+      number.value = Number(number.value) + 1;
+    }
+  </script>
+
+</body>
+</html>

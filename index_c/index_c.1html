@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style>.lw { font-size: 60px; font-family: Arial, Helvetica, sans-serif; }</style>
+            </head>
+            <body>
+                <h1 style="color:#ff0000; font-weight:bold; font-style:italic;">
+    これは表題です
+</h1>
+                <script>// Write JavaScript here</script>
+            
+        
+    </body>
